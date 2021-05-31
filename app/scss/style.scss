@@ -3,6 +3,85 @@
 @import 'reset';
 @import 'global';
 
+.header {
+  padding-top: 48px;
+  margin-bottom: 44px;
 
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.menu {
+  @extend %rubik-500;
+
+  &__list {
+    display: flex;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 35px;
+  }
+
+  &__link {
+    font-size: 15px;
+    color: $link;
+
+    &:hover {
+      color: #fcd7b6;
+      transition: color 0.5s;
+    }
+  }
+
+  &__link--active {
+    color: #fcd7b6;
+  }
+}
+
+.user-nav {
+  display: flex;
+  line-height: 0;
+  &__link:nth-child(1) {
+    padding: 18px 18px 18px 17px;
+    border-radius: 50%;
+    background-color: #edf1f4;
+    margin-right: 21px;
+  }
+
+  &__link:nth-child(4) {
+    padding: 15px 15px 16px 16px;
+    border-radius: 50%;
+    background-color: #a3bbc8;
+  }
+
+  &__link:nth-child(2) {
+    position: relative;
+    border-radius: 50px 0 0 50px;
+    background-color: #fcd7b6;
+    padding: 22px 32px 12px 42px;
+  }
+
+  &__link:nth-child(3) {
+    position: relative;
+    border-radius: 0px 50px 50px 0;
+    margin-right: 18px;
+    background-color: #fcd7b6;
+    padding: 22px 40px 12px 27px;
+  }
+
+  &__num {
+    line-height: normal;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: white;
+    border-radius: 50%;
+    text-align: center;
+    top: 15px;
+    right: 10px;
+  }
+}
 
 @import 'media';
