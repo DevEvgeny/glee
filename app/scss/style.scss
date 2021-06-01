@@ -16,6 +16,7 @@
 
 .menu {
   @extend %rubik-500;
+  font-weight: 700;
 
   &__list {
     display: flex;
@@ -40,9 +41,10 @@
   }
 }
 
-.user-nav {
+.header-nav {
   display: flex;
   line-height: 0;
+
   &__link:nth-child(1) {
     padding: 18px 18px 18px 17px;
     border-radius: 50%;
@@ -60,7 +62,7 @@
     position: relative;
     border-radius: 50px 0 0 50px;
     background-color: #fcd7b6;
-    padding: 22px 32px 12px 42px;
+    padding: 22px 40px 12px 33px;
   }
 
   &__link:nth-child(3) {
@@ -80,8 +82,96 @@
     border-radius: 50%;
     text-align: center;
     top: 15px;
-    right: 10px;
+    right: 30px;
   }
 }
+
+.footer{
+  @extend %rubik-400;
+  font-size: 14px;
+  color: $footer;
+}
+
+.footer-top {
+  display: flex;
+  justify-content:space-between;
+  padding:100px 0 77px;
+  border-bottom: 1px solid #dae4e9;
+  &__logo{
+    display: block;
+    margin-bottom: 30px;
+  }
+  &__contact {
+    max-width: 191px;
+    width: 100%;
+    margin-bottom: 16px;
+  }
+
+  &__contact span {
+    text-transform: uppercase;
+  }
+
+  &__address {
+    max-width: 178px;
+    width: 100%;
+    font-style: normal;
+    line-height: 24px;
+  }
+
+  &__title {
+    @extend %dmsans-700;
+    margin-bottom: 29px;
+    font-size: 16px;
+    color: #1f2044;
+    text-transform: uppercase;
+  }
+
+  &__item {
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    max-width: 234px;
+    width: 100%;
+    margin-bottom: 38px;
+  }
+
+  &__form-email {
+    border: none;
+    font-weight: 400;
+    font-size: 12px;
+    background-color: #fef7f0;
+    padding: 14px 0 15px 16px;
+    margin-right: -5px;
+    &::placeholder{
+      color: #234969;
+    }
+  }
+
+  &__form-btn {
+    font-size: 12px;
+    padding: 14px 19px 15px 16px;
+    border: none;
+    background-color: #a3bbc8;
+    color: #ffffff;
+    cursor: pointer;
+  }
+}
+
+.footer-bottom{
+  display: flex;
+  justify-content: space-between;
+  padding: 34px 0 39px;
+  &__list{
+    display: flex;
+  }
+  &__item:not(:last-child){
+    border-right: 2px solid $footer;
+    margin-right: 14px;
+    padding-right: 14px;
+  }
+}
+
+
 
 @import 'media';
