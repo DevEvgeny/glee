@@ -11,6 +11,7 @@ body {
   font-style: normal;
   letter-spacing: normal;
   line-height: normal;
+  background-color: #ffffff;
 }
 
 .main{
@@ -23,8 +24,31 @@ body {
   padding: 0 15px;
 }
 
-.container-content{
+.wrapper{
   max-width: 1190px;
   margin: 0 auto;
   padding: 0 10px;
+}
+
+.title {
+  @extend %dmsans-700;
+  color:$title;
+  font-size: 36px;
+  text-align: center;
+}
+
+.gallery__btns{
+  text-align: center;
+}
+.gallery__btn{
+  @extend %dmsans-700;
+  padding: 0;
+  color: #8b8b8b;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  margin-bottom: 80px;
+}
+.gallery__btn:not(:last-child) {
+  margin-right: 26px;
 }
