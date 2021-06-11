@@ -1,6 +1,9 @@
 $link:#436372;
 $footer:#7b7b7b;
 $title:#1a1a1a;
+$branded:#fcd7b6;
+$nameFurniture:#243f4d;
+
 
 
 %dmsans-400{
@@ -23,4 +26,11 @@ $title:#1a1a1a;
 %rubik-500{
   font-family: 'Rubik-Medium',sans-serif;
   font-weight: 500;
+}
+
+ @function max($numbers...){
+  @return m#{a}x(#{$numbers});
+}
+@function min($numbers...){
+  @return m#{i}n(#{$numbers});
 }
