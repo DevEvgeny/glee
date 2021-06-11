@@ -37,10 +37,10 @@ body {
   text-align: center;
 }
 
-.gallery__btns{
+.buttons{
   text-align: center;
 }
-.gallery__btn{
+.button{
   @extend %dmsans-700;
   padding: 0;
   color: #8b8b8b;
@@ -49,6 +49,6 @@ body {
   cursor: pointer;
   margin-bottom: 80px;
 }
-.gallery__btn:not(:last-child) {
+.button:not(:last-child) {
   margin-right: 26px;
 }
